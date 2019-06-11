@@ -19,12 +19,12 @@ namespace ShellNavigationRegistration.Views
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            //Shell.Current.Navigation.RemovePage(
-            //    Shell.Current.Navigation.NavigationStack[
-            //        Shell.Current.Navigation.NavigationStack.Count - 2]);
             try
             {
-                await Shell.Current.Navigation.PopAsync();
+                Shell.Current.Navigation.RemovePage(
+                    Shell.Current.Navigation.NavigationStack[
+                        Shell.Current.Navigation.NavigationStack.Count - 2]);
+                //await Shell.Current.Navigation.PopAsync();
                 await Shell.Current.Navigation.PopAsync();
             }
             catch(Exception ex)

@@ -6,9 +6,13 @@
              mc:Ignorable="d"
              x:Class="ShellNavigationRegistration.Views.OnBoardingThird"
              Shell.TabBarIsVisible="False"
-             Shell.NavBarIsVisible="False">
+             Shell.NavBarIsVisible="False"
+             Padding="0"
+             BackgroundColor="{StaticResource PrimaryPurpleLight}"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="False">
     <ContentPage.Content>
-        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <StackLayout>
             <Label Text="On Boarding Third Screen" />
             <Button Text="Go Back 1" Clicked="Button_Clicked" />
         </StackLayout>

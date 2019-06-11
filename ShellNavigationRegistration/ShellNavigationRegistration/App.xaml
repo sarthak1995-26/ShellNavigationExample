@@ -6,6 +6,27 @@
              mc:Ignorable="d"
              x:Class="ShellNavigationRegistration.App">
     <Application.Resources>
-        
+        <ResourceDictionary>
+            <Color x:Key="PrimaryLavendarLight">#AEAEFF</Color>
+            <Color x:Key="PrimaryPurpleDark">#231E51</Color>
+            <Color x:Key="PrimaryPurpleLight">#333377</Color>
+
+            <Style TargetType="StackLayout">
+                <Setter Property="BackgroundColor" Value="{StaticResource PrimaryLavendarLight}" />
+                <Setter Property="Padding" Value="20, 60" />
+                <Setter Property="VerticalOptions" Value="Fill" />
+                <Setter Property="HorizontalOptions" Value="Fill" />
+            </Style>
+
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="FontSize" Value="30" />
+            </Style>
+            
+            <Style TargetType="Button">
+                <Setter Property="TextColor" Value="{StaticResource PrimaryPurpleDark}" />
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

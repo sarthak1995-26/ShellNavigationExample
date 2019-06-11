@@ -14,7 +14,7 @@ namespace ShellNavigationRegistration
 
             RegisterRoutes();
 
-            GoToAsync("on-boarding");
+            //GoToAsync("on-boarding");
         }
 
         private void RegisterRoutes()
