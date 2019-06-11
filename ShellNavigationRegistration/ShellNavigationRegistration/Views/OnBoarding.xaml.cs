@@ -21,5 +21,11 @@ namespace ShellNavigationRegistration.Views
         {
             await Shell.Current.Navigation.PushAsync(new OnBoardingSecond(), true);
         }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            Console.WriteLine("Lady Appearing in this App");
+        }
     }
 }
