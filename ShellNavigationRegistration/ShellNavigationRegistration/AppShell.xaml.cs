@@ -11,15 +11,7 @@ namespace ShellNavigationRegistration
         public AppShell()
         {
             InitializeComponent();
-
-            RegisterRoutes();
-
-            //GoToAsync("on-boarding");
-        }
-
-        private void RegisterRoutes()
-        {
-            Routing.RegisterRoute("on-boarding", typeof(OnBoarding));
+            GoToAsync("Items");
         }
 
         protected override void OnAppearing()

@@ -35,5 +35,10 @@ namespace ShellNavigationRegistration.Views
             viewModel = new ItemDetailViewModel(item);
             BindingContext = viewModel;
         }
+
+        private async void Close_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopToRootAsync();
+        }
     }
 }

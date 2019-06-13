@@ -5,9 +5,12 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="ShellNavigationRegistration.Views.ItemDetailPage"
+             Shell.NavBarIsVisible="False"
+             Shell.TabBarIsVisible="False"
              Title="{Binding Title}">
 
     <StackLayout Spacing="20" Padding="15">
+        <Button Text="X" HorizontalOptions="End" Margin="40, 0" Clicked="Close_Clicked" />
         <Label Text="Text:" FontSize="Medium" />
         <Label Text="{Binding Item.Text}" d:Text="Item name" FontSize="Small"/>
         <Label Text="Description:" FontSize="Medium" />

@@ -13,6 +13,7 @@
              ios:Page.UseSafeArea="False">
     <ContentPage.Content>
         <StackLayout>
+            <Button Text="X" HorizontalOptions="End" Margin="40, 0" Clicked="Close_Clicked" />
             <Label Text="On Boarding 1" />
             <Button Text="Next Screen" Clicked="Button_Clicked" />
         </StackLayout>

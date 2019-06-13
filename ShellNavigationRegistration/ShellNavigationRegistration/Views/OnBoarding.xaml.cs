@@ -27,5 +27,10 @@ namespace ShellNavigationRegistration.Views
             base.OnAppearing();
             Console.WriteLine("Lady Appearing in this App");
         }
+
+        private async void Close_Clicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("///Items", true);
+        }
     }
 }
